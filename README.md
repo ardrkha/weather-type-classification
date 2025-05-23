@@ -70,9 +70,11 @@ Dataset terdiri dari 13200 baris yang mencakup berbagai fitur terkait cuaca dan 
 - Jumlah nilai kosong (null) = 0
 - Duplikat = 0
 - Outlier = Terdapat pada fitur Temperature, Wind Speed, Atmospheric Pressure, dan Visibility (km)
+
 Berikut adalah visualisasi heatmap nilai null, dan histogram sebaran awal:
-![Heatmap Null](assets/heatmap_null.png)
 ![Histogram](assets/histogram.png)
+![Heatmap Null](assets/heatmap_null.png)
+
 
 \
 **Exploratory Data Analysis (EDA)**
