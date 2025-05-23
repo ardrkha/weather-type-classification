@@ -47,10 +47,9 @@ Menurut [Kowalski & Keeling, 2020], penggunaan machine learning untuk klasifikas
 - F1-Score
 - Confusion Matrix
 ## Data Understanding
-Dataset yang digunakan bersifat sintetis dan tersedia dari platform Kaggle. Dataset terdiri dari 13200 baris yang mencakup berbagai fitur terkait cuaca dan mengkategorikan cuaca menjadi empat jenis: Cloudy, Rainy, Snowy, dan Sunny.
+Dataset yang digunakan bersifat sintetis dan tersedia dari platform Kaggle. 
 
 Sumber dataset: https://www.kaggle.com/datasets/nikhil7280/weather-type-classification
-
 
 **Fitur-fitur pada Dataset:**
 | Fitur | Tipe | Deskripsi |
@@ -66,6 +65,14 @@ Sumber dataset: https://www.kaggle.com/datasets/nikhil7280/weather-type-classifi
 |Visibility (km)	|Numerik|	Jarak pandang dalam km (bisa sangat rendah atau sangat tinggi)|
 |Location	|Kategorikal|	Jenis lokasi (urban, rural, coastal, mountain, dll)|
 |Weather Type	|Kategorikal|	Target klasifikasi: Cloudy, Rainy, Snowy, Sunny
+
+Dataset terdiri dari 13200 baris yang mencakup berbagai fitur terkait cuaca dan mengkategorikan cuaca menjadi empat jenis: Cloudy, Rainy, Snowy, dan Sunny. Berikut ini adalah kondisi data sebelum dilakukan pembersihan:
+- Jumlah nilai kosong (null) = 0
+- Duplikat = 0
+- Outlier = Terdapat pada fitur Temperature, Wind Speed, Atmospheric Pressure, dan Visibility (km)
+Berikut adalah visualisasi heatmap nilai null, dan histogram sebaran awal:
+![Heatmap Null](assets/heatmap_null.png)
+![Histogram](assets/histogram.png)
 
 \
 **Exploratory Data Analysis (EDA)**
@@ -214,7 +221,7 @@ Berikut adalah hasil evaluasi dari lima algoritma yang diujikan:
 
 
 Berikut adalah confusion matrix dari model terbaik (Random Forest):
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](assets/confusion_matrix.png)
 
 Interpretasi:
 - Baris merepresentasikan label sebenarnya, kolom adalah prediksi model.
@@ -224,4 +231,6 @@ Interpretasi:
 
 ## Contact
 
-Hardatama Rakha Ugraha - 2025
+If you have any questions, feel free to reach out to us at hardatama27@gmail.com.
+
+Developed by Hardatama Rakha Ugraha - 2025
